@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rating-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.rating-content {
+  width: 350px;
+  height: fit-content;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+}
+
+.icon-container {
+  background-color: hsl(216, 12%, 54%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 20px;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.rating-text {
+  margin: 20px;
+}
+
+h2,
+button {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  color: hsl(217, 12%, 63%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rating-value {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.rating-values {
+  background-color: hsl(212, 7%, 35%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.rating-values-selected {
+  background-color: hsl(217, 12%, 63%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.rating-values:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.submit {
+  width: -webkit-fill-available;
+  margin: 20px;
+  border-radius: inherit;
+  border: none;
+  height: 30px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  cursor: pointer;
+}
+
+.submit:hover {
+  width: -webkit-fill-available;
+  margin: 20px;
+  border-radius: inherit;
+  border: none;
+  height: 30px;
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.thanks-text {
+  text-align: center;
+  margin: 20px;
+}
+
+.selection-text {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(212, 7%, 35%);
+  border-radius: 10px;
+  width: 230px;
+  height: 25px;
+  margin: auto;
 }
